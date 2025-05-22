@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo Intermodular - Casino</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🎰 Trabajo Intermodular</h1>
+    <h2>Grupo Los Pichones del Casino</h2>
+</header>
+
+<section>
+    <article>
+        <h3>Introducción</h3>
+        <p>
+            Bienvenidos a nuestro <strong>Trabajo Intermodular</strong>. Nuestra idea inicial era realizar un proyecto sobre temas poco convencionales, pero al ser censurados decidimos reconducirlo a algo igual de emocionante: <strong>un casino</strong>.
+            Aquí encontraréis información simulada de clientes, crupieres y juegos, organizada en tablas HTML y con un aviso importante.
+        </p>
+    </article>
+</section>
+
+<section>
+    <h3>Clientes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Nombre</th><th>DNI</th><th>Edad</th><th>Tarjeta</th><th>Saldo</th><th>Sexo</th><th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>Pedro Gómez</td><td>12345678A</td><td>34</td><td>Sí</td><td>500.50€</td><td>Hombre</td><td>2024-04-20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>Lucía Pérez</td><td>98765432B</td><td>29</td><td>No</td><td>150.00€</td><td>Mujer</td><td>2024-05-01</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Crupieres</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Nombre</th><th>DNI</th><th>ID Juego</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>Carlos Ruiz</td><td>44556677C</td><td>1</td>
+            </tr>
+            <tr>
+                <td>2</td><td>Sara López</td><td>99887766D</td><td>2</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Juegos</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Nombre</th><th>ID Crupier</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>Ruleta</td><td>1</td>
+            </tr>
+            <tr>
+                <td>2</td><td>Póker</td><td>2</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="botonera">
+    <button onclick="mostrarAviso()">Mostrar aviso</button>
+</section>
+
+<footer>
+    <p>Trabajo realizado por Los Pichones del Casino © 2025</p>
+</footer>
+
+</body>
+</html>
+
+
