@@ -1,4 +1,4 @@
-package com.mycompany.proyecto_intermodular;
+package com.mycompany.proyecto_intermodular.Modelos;
 
 import java.sql.Date;
 
