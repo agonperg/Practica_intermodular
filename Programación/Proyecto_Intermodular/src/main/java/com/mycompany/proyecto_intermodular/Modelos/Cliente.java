@@ -4,23 +4,7 @@ import java.sql.Date;
 
 public class Cliente {
 
-    public enum Sexo {
-        HOMBRE("Hombre"),
-        MUJER("Mujer");
-
-        private String nombre;
-
-        private Sexo(String nombre) {
-            this.nombre = nombre;
-        }
-
-        @Override
-        public String toString() {
-            StringBuilder sb = new StringBuilder();
-            sb.append(" Sexo: ").append(this.nombre);
-            return sb.toString();
-        }
-    }
+    
 
     private Long id_cliente;
     private String nombre_cliente;
@@ -28,14 +12,14 @@ public class Cliente {
     private int edad;
     private boolean tarjeta;
     private double saldo;
-    private Sexo sexo;
+    private String sexo;
     private Date fecha;
 
     public Cliente() {
         // Me da la puta gana
     }
 
-    public Cliente(Long id, String n, String d, int e, boolean t, double s, Sexo sexo, Date f) {
+    public Cliente(Long id, String n, String d, int e, boolean t, double s, String sexo, Date f) {
         this();
         this.id_cliente = id;
         this.nombre_cliente = n;
@@ -95,11 +79,11 @@ public class Cliente {
         this.saldo = saldo;
     }
 
-    public Sexo getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(Sexo sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
