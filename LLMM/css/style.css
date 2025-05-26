@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+.foto {
+    border-radius: 20%;
+    border: 5px solid red;
+    width: 500px;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+header {
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    transition: all 0.5s ease;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+section {
+    margin: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    transition: all 0.5s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+.boton {
+    text-align: center;
+    margin: 30px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #e67e22;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d35400;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #666;
+    transition: all 0.5s ease;
+}
+
+/* Estilos para el tema azul */
+body.tema-azul {
+    background-color: #f0f8ff;
+}
+
+body.tema-azul header {
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+}
+
+body.tema-azul th {
+    background-color: #3498db;
+}
+
+body.tema-azul button {
+    background: #2980b9;
+}
+
+body.tema-azul button:hover {
+    background: #1a5276;
+}
+
+body.tema-azul .foto {
+    border: 5px solid #3498db;
+}
