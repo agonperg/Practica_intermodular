@@ -90,7 +90,6 @@ public class DataBaseManager {
             c.setId_crupier(rs.getLong("id_crupier"));
             c.setNombre(rs.getString("nombre_crupier"));
             c.setDni_crupier(rs.getString("dni_crupier"));
-            c.setId_fk(rs.getLong("id_fkjuego"));
             
         }catch(SQLException e){
             e.printStackTrace();

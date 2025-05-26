@@ -44,8 +44,9 @@ public class Proyecto_Intermodular {
         
         do{
             System.out.println("[1] Ver los datos de los clientes. ");
-            System.out.println("[2] V. ");
-            System.out.println("[3] Ver las entidades secundarias. ");
+            System.out.println("[2] Ver los datos de los juegos. ");
+            System.out.println("[3] Ver los datos de el crupier. ");
+            System.out.println("[3] Ver los datos de cliente - juego. ");
             System.out.println("[0] Salir. ");
             System.out.print("Eleccion: ");
             opcion = sc.nextLine(); 
@@ -55,9 +56,9 @@ public class Proyecto_Intermodular {
                 
                 case "1": {
                     do{
-                        System.out.println("[1] Buscar usuario por id. ");
-                        System.out.println("[2] Buscar usuario por nombre. ");
-                        System.out.println("[3] Buscar usuario por dni. ");
+                        System.out.println("[1] Buscar cliente por id. ");
+                        System.out.println("[2] Buscar cliente por nombre. ");
+                        System.out.println("[3] Buscar cliente por dni. ");
                         System.out.println("[0] Salir. ");
                         System.out.print("Eleccion: ");
                         subMenu = sc.nextLine(); 
@@ -132,9 +133,233 @@ public class Proyecto_Intermodular {
                 
                 
                 case "2" : {
+             
+                    
+                    do{
+                        System.out.println("[1] Buscar juegos. ");
+                        System.out.println("[2] Buscar juego por nombre. ");
+                        System.out.println("[3] Buscar juego por id crupier. ");
+                        System.out.println("[0] Salir. ");
+                        System.out.print("Eleccion: ");
+                        subMenu = sc.nextLine(); 
+                        
+                        switch(subMenu){
+                            case "1" : {
+                                Long id = 0L; 
+                                Juego j = null; 
+                                
+                                System.out.println("============= Crupiers ===============");
+                                System.out.println(crupiers);
+                                System.out.println("====================================");
+                               
+                                 
+                                Iterator<Juego> it = juegos.iterator();
+                                while(it.hasNext()){
+                                    j = it.next(); 
+                                    //System.out.println(c);
+                                    if(Long.valueOf(j.getId_Juego()).equals(id)){
+                                        System.out.println(j);
+                                    }
+                                }
+                                sc.nextLine(); 
+                                break; 
+                            }
+                            
+                            case "2": {
+                                String n = ""; 
+                                Juego j = null; 
+                                
+                                System.out.println("============= Crupiers ===============");
+                                System.out.println(crupiers);
+                                System.out.println("====================================");
+                                
+                                System.out.print("Dime el nombre del juego: ");
+                                n = sc.nextLine(); 
+                                
+                                Iterator<Juego> it = juegos.iterator(); 
+                                while(it.hasNext()){
+                                    j = it.next(); 
+                                    if(j.getNombre_juego().equals(n)){
+                                        System.out.println(j);
+                                    }
+                                }
+                                break; 
+                            }
+                            
+                            case "3" : {
+                                Long id = 0L; 
+                                Juego c = null; 
+                                
+                                System.out.print("Dime el id del juego: ");
+                                id = sc.nextLong(); 
+                                
+                                Iterator<Juego> it = juegos.iterator(); 
+                                while(it.hasNext()){
+                                    c = it.next(); 
+                                    if(c.getId_CrupierAsignado().equals(id)){
+                                        System.out.println(c);
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    }while(!(subMenu.equals("0"))); 
                     
                     
                     
+                }
+                
+                
+                
+                
+                case "3" : {
+                    
+                    
+                    do{
+                        System.out.println("[1] Mostrar cupriers. ");
+                        System.out.println("[2] Buscar crupier por nombre. ");
+                        System.out.println("[3] Buscar cruprier por dni. ");
+                        System.out.println("[0] Salir. ");
+                        System.out.print("Eleccion: ");
+                        subMenu = sc.nextLine(); 
+                        
+                        switch(subMenu){
+                            case "1" : { 
+                                
+                                System.out.println("============= Crupiers ===============");
+                                System.out.println(crupiers);
+                                System.out.println("====================================");
+                               
+                                break; 
+                            }
+                            
+                            case "2": {
+                                String n = ""; 
+                                Crupier j = null; 
+                                
+                                
+                                System.out.print("Dime el nombre del juego: ");
+                                n = sc.nextLine(); 
+                                
+                                Iterator<Crupier> it = crupiers.iterator(); 
+                                while(it.hasNext()){
+                                    j = it.next(); 
+                                    if(j.getNombre().equals(n)){
+                                        System.out.println(j);
+                                    }
+                                }
+                                break; 
+                            }
+                            
+                            case "3" : {
+                                Long id = 0L; 
+                                Crupier c = null; 
+                                
+                                System.out.print("Dime el id del crupier: ");
+                                id = sc.nextLong(); 
+                                
+                                Iterator<Crupier> it = crupiers.iterator(); 
+                                while(it.hasNext()){
+                                    c = it.next(); 
+                                    if(c.getId_crupier().equals(id)){
+                                        System.out.println(c);
+                                    }
+                                }
+                                sc.nextLine(); 
+                                break;
+                            }
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    }while(!(subMenu.equals("0"))); 
+                    
+                    
+                    
+                }
+                
+                
+                case "4" : {
+                    
+                    
+                    do{
+                        System.out.println("[1] Mostrar cliented - juego. ");
+                        System.out.println("[2] Buscar cliente por id. ");
+                        System.out.println("[3] Buscar juego por id. ");
+                        System.out.println("[0] Salir. ");
+                        System.out.print("Eleccion: ");
+                        subMenu = sc.nextLine(); 
+                        
+                        switch(subMenu){
+                            case "1" : { 
+                                
+                                System.out.println("============= Crupiers ===============");
+                                System.out.println(cliente_juego);
+                                System.out.println("====================================");
+                               
+                                break; 
+                            }
+                            
+                            case "2": {
+                                Long id = 0L; 
+                                ClienteJuego j = null; 
+                                
+                                
+                                System.out.print("Dime el id del cliente: ");
+                                id = sc.nextLong(); 
+                                
+                                Iterator<ClienteJuego> it = cliente_juego.iterator(); 
+                                while(it.hasNext()){
+                                    j = it.next(); 
+                                    if(j.getId_cliente().equals(id)){
+                                        System.out.println(j);
+                                    }
+                                }
+                                sc.nextLine(); 
+                                break; 
+                            }
+                            
+                            case "3" : {
+                                Long id = 0L; 
+                                ClienteJuego j = null; 
+                                
+                                
+                                System.out.print("Dime el id del juego: ");
+                                id = sc.nextLong(); 
+                                
+                                Iterator<ClienteJuego> it = cliente_juego.iterator(); 
+                                while(it.hasNext()){
+                                    j = it.next(); 
+                                    if(j.getId_juego().equals(id)){
+                                        System.out.println(j);
+                                    }
+                                }
+                                sc.nextLine(); 
+                                break; 
+                            }
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    }while(!(subMenu.equals("0"))); 
                     
                 }
                 

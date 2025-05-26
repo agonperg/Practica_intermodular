@@ -8,14 +8,13 @@ public class Crupier {
     private Long id_crupier; 
     private String nombre; 
     private String dni_crupier; 
-    private Long id_fk; 
+
     
     public Crupier(){}
-    public Crupier(Long id, String n, String d, Long i){
+    public Crupier(Long id, String n, String d){
         this.id_crupier = id; 
         this.nombre = n; 
         this.dni_crupier = d; 
-        this.id_fk = i; 
     }
 
     public Long getId_crupier() {
@@ -42,19 +41,13 @@ public class Crupier {
         this.dni_crupier = dni_crupier;
     }
 
-    public Long getId_fk() {
-        return id_fk;
-    }
-
-    public void setId_fk(Long id_fk) {
-        this.id_fk = id_fk;
-    }
+    
     
     @Override 
     public String toString(){
         StringBuilder sb = new StringBuilder(); 
         sb.append(" ID Crupier: ").append(this.id_crupier).append(" Nombre Crupier: ").append(this.nombre).append(" DNI Crupier: ").append(this.dni_crupier)
-                .append(" ID Juego: ").append(this.id_fk).append("\n"); 
+                .append("\n"); 
         return sb.toString(); 
     }
 }
