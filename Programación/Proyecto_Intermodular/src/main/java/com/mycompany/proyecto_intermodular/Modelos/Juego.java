@@ -8,9 +8,9 @@ import java.util.Date;
 
 public class Juego {
 
-    private Long id_cliente; 
     private Long id_juego; 
-    private Date fecha; 
+    private String nombre_juego; 
+    private Long id_CrupierAsignado;  
     private ArrayList<Cliente> clientes; 
     private ArrayList<Juego> juegos; 
     
@@ -19,50 +19,45 @@ public class Juego {
         this.juegos = new ArrayList<>(); 
     }
     
-    public Juego(Long id_c, Long id_j, Date f) {
-        this.id_cliente = id_c; 
-        this.id_juego = id_j; 
-        this.fecha = f; 
+    public Juego (Long id_juego, String nombre, Long idCrupier) {
+        this.id_juego = id_juego; 
+        this.nombre_juego = nombre; 
+        this.id_CrupierAsignado = idCrupier; 
     }
 
-    public Long getId_cliente() {
-        return id_cliente;
-    }
-
-    public void setId_cliente(Long id_cliente) {
-        this.id_cliente = id_cliente;
-    }
-
-    public Long getId_juego() {
+    public Long getId_Juego() {
         return id_juego;
     }
 
-    public void setId_juego(Long id_juego) {
+    public void setId_Juego(Long id_juego) {
         this.id_juego = id_juego;
     }
 
-    public ArrayList<Juego> getJuegos() {
-        return juegos;
+    public String getNombre_juego() {
+        return nombre_juego;
+    }
+
+    public void setNombre_juego(String nombre_juego) {
+        this.nombre_juego = nombre_juego;
+    }
+
+    public Long getId_CrupierAsignado() {
+        return id_CrupierAsignado;
+    }
+
+    public void setId_CrupierAsignado(Long id_CrupierAsignado) {
+        this.id_CrupierAsignado = id_CrupierAsignado;
     }
     
-    public ArrayList<Cliente> getCliente(){
-        return this.clientes; 
-    }
     
-    public void addCliente(Cliente c){
-        this.clientes.add(c); 
-    }
     
-    public void addJuegos(Juego j){
-        this.juegos.add(j); 
-    }
     
     
     @Override 
     public String toString(){
         StringBuilder sb = new StringBuilder(); 
-        sb.append(" ID Cliente: ").append(this.id_cliente).append(" ID Juego: ").append(this.id_juego).append(" Fecha: ")
-                .append(this.fecha).append("\n"); 
+        sb.append(" ID Juego: ").append(this.id_juego).append(" Nombre: ").append(this.nombre_juego).append(" ID Crupier: ")
+                .append(this.id_CrupierAsignado).append("\n"); 
         return sb.toString(); 
     }
     
