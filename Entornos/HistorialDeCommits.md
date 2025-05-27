@@ -325,3 +325,144 @@ commit 3d33a50c940548e03a2ae9f8bba88a4ef11903fe
 Author: pnh0002 <pnh0002@alu.medac.es>
 Date:   Mon May 19 14:19:39 2025 +0200
 :
+
+Historial de comando git log de la rama Paco
+commit af021fa962a27e73daedd67c4c748007ae651b6f (HEAD -> main, origin/main, origin/HEAD)
+Merge: 10817e2 29c1ac1
+Author: Andres <agp0109@alu.medac.es>
+Date:   Mon May 26 14:01:42 2025 +0200
+
+    Merge remote-tracking branch 'origin/paco'
+
+commit 10817e21191c3938d0c3dc0a2118bb19808b8731
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:52:55 2025 +0200
+
+    Delete BBDD/Creacion BBDD.sql
+
+commit e1d1708d7ab75ecf70d4c7a4314305dc729ba369
+Merge: 618330c 82d487a
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:50:59 2025 +0200
+
+    Merge remote-tracking branch 'origin/Moncho'
+
+commit 618330c258c563a6d6d921df90a2692ff0006081
+Author: pnh0002 <pnh0002@alu.medac.es>
+:...skipping...
+commit af021fa962a27e73daedd67c4c748007ae651b6f (HEAD -> main, origin/main, origin/HEAD)
+Merge: 10817e2 29c1ac1
+Author: Andres <agp0109@alu.medac.es>
+Date:   Mon May 26 14:01:42 2025 +0200
+
+    Merge remote-tracking branch 'origin/paco'
+
+commit 10817e21191c3938d0c3dc0a2118bb19808b8731
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:52:55 2025 +0200
+
+    Delete BBDD/Creacion BBDD.sql
+
+commit e1d1708d7ab75ecf70d4c7a4314305dc729ba369
+Merge: 618330c 82d487a
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:50:59 2025 +0200
+
+    Merge remote-tracking branch 'origin/Moncho'
+
+commit 618330c258c563a6d6d921df90a2692ff0006081
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:36:09 2025 +0200
+
+    Terminado el programa
+
+commit 20cac36476a8cfa8a75978a37dd4f20f1fbf5a69
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 12:19:26 2025 +0200
+
+    Tenemos main
+
+commit a3f093514a8834d9871b8332b09a8af6f1cab4fb
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Fri May 23 11:04:24 2025 +0200
+
+    Ajustamos el DataBaseManager
+
+commit 9e833e6d39564cec67812088bc795b3e1b46e7e3
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Thu May 22 14:06:20 2025 +0200
+
+    Seguimos con clases
+
+commit 76d4ce3cecd2d8dca41aa7dceebbee1f54c03be5
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Thu May 22 11:11:35 2025 +0200
+
+    Modelos programación
+
+commit c6d7ebe3d27215c0727e7452bdaa18fec11bd370
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Tue May 20 11:03:50 2025 +0200
+
+    Avance en el programa!
+
+commit 616048f9f4a184d1853341fef7970ab741a1a7a9
+:
+commit af021fa962a27e73daedd67c4c748007ae651b6f (HEAD -> main, origin/main, origin/HEAD)
+Merge: 10817e2 29c1ac1
+Author: Andres <agp0109@alu.medac.es>
+Date:   Mon May 26 14:01:42 2025 +0200
+
+    Merge remote-tracking branch 'origin/paco'
+
+commit 10817e21191c3938d0c3dc0a2118bb19808b8731
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:52:55 2025 +0200
+
+    Delete BBDD/Creacion BBDD.sql
+
+commit e1d1708d7ab75ecf70d4c7a4314305dc729ba369
+Merge: 618330c 82d487a
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:50:59 2025 +0200
+
+    Merge remote-tracking branch 'origin/Moncho'
+
+commit 618330c258c563a6d6d921df90a2692ff0006081
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 13:36:09 2025 +0200
+
+    Terminado el programa
+
+commit 20cac36476a8cfa8a75978a37dd4f20f1fbf5a69
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Mon May 26 12:19:26 2025 +0200
+
+    Tenemos main
+
+commit a3f093514a8834d9871b8332b09a8af6f1cab4fb
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Fri May 23 11:04:24 2025 +0200
+
+    Ajustamos el DataBaseManager
+
+commit 9e833e6d39564cec67812088bc795b3e1b46e7e3
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Thu May 22 14:06:20 2025 +0200
+
+    Seguimos con clases
+
+commit 76d4ce3cecd2d8dca41aa7dceebbee1f54c03be5
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Thu May 22 11:11:35 2025 +0200
+
+    Modelos programación
+
+commit c6d7ebe3d27215c0727e7452bdaa18fec11bd370
+Author: pnh0002 <pnh0002@alu.medac.es>
+Date:   Tue May 20 11:03:50 2025 +0200
+
+    Avance en el programa!
+
+commit 616048f9f4a184d1853341fef7970ab741a1a7a9
+:
