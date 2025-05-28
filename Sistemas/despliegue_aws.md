@@ -62,7 +62,7 @@ sudo cp -r /home/ubuntu/NOMBRE_CARPETA /var/www/html
 Abrimos el navegador y accedemos a la URL:
 
 ```
-http://ec2-44-204-78-126.compute-1.amazonaws.com/NOMBRE_CARPETA/
+ec2-44-204-78-126.compute-1.amazonaws.com/NOMBRE_CARPETA/
 ```
 
 Si todo está correcto, deberíamos ver el sitio web:
